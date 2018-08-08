@@ -6,7 +6,7 @@ import java .util .regex .Pattern;
 
 public class java_regex {
     public static void main( String [] args ) {
-        Pattern patron = Pattern .compile( "^2011\\-.*$" );         // Compila la expresión regular en Java hay que escapar los \ backslaches, motivo por el que se usan dobles
+        Pattern patron = Pattern .compile( "^\\d{4}\\-.*[zkZK].*$" );         // Compila la expresión regular en Java hay que escapar los \ backslaches, motivo por el que se usan dobles
         String file = "./files/results.csv";
         String line;
 
